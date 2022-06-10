@@ -4,6 +4,8 @@ import path from 'path';
 import { ApolloServer } from 'apollo-server';
 import { buildSchema } from 'type-graphql';
 
+import { UserResolver } from "./src/resolvers/UserResolver";
+
 async function main() {
   const schema = await buildSchema({
     /*
@@ -12,7 +14,9 @@ async function main() {
       do backend são os resolvers, ou seja, os resolvers é como se fosse as
       nossas "rotas" 
     */
-    resolvers: [],
+    resolvers: [
+      UserResolver,
+    ],
     // o emitSchemaFile é para indicar aonde eu quero salvar o arquivo de schema
     // do GraphQL 
     emitSchemaFile: path.resolve(__dirname, 'schema.gql'),
