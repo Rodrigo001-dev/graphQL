@@ -2,7 +2,7 @@ import { gql, useMutation } from "@apollo/client";
 import { FormEvent, useState } from "react";
 
 const CREATE_USER = gql`
-  mutation ($name: string) {
+  mutation ($name: String!) {
     createUser(name: $name) {
       id
       name
@@ -26,8 +26,6 @@ export function NewUserForm() {
         name
       },
     });
-
-    console.log(data);
   };
   
   return (
