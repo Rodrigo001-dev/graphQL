@@ -37,4 +37,9 @@ Quando utilizamos o GraphQL quem diz quais dados são necessários do backend é
   - Trabalhar com cache é muito mais difícil no GraphQL do que com o REST, porque com REST os próprios browsers já estão padronizados para fazer o cache das requisições.
 
   - Errors: os erros que o backend retorna é mais difícil de tratar esses erros, fazer a manipulação desses erros com GraphQL. Todas as chamadas HTTP sempre retornam código 200, ou seja, é um código de "sucesso" para o browser.
+
+Dentro do GraphQL existe o schema first e o code first.
+
+O Schema first é escrito o schema antes e depois o código é escrito.
+No code first o código é escrito primeiro e ele mesmo se encarrega de criar o schema.
       

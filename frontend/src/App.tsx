@@ -1,10 +1,30 @@
-import { useState } from 'react'
+import { gql, useQuery } from "@apollo/client"
+
+type User = {
+  id: string;
+  name: string;
+};
+
+const GET_USER = gql`
+  query {
+    users {
+      id
+      name
+    }
+  }
+`;
 
 function App() {
-  const [count, setCount] = useState(0)
+  const { data, loading } = useQuery<{ users: User[] }>(GET_USER);
+
+  if (loading) {
+    return <p>Carregando...</p>
+  };
 
   return (
-    <h1>ola</h1>
+    <ul>
+      {data?.users.map(user => <li key={user.id}>{user.name}</li>)}
+    </ul>
   )
 }
 
