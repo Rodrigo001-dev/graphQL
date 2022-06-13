@@ -12,7 +12,7 @@ GraphQl é uma ferramenta que foi criada dentro do facebook, a tradução vem de
 
 Mas para que o GraphQL serve?
 
-Ele básicamente serve para realizar operações de escrita e leitura através da comunicação do Front com o Back , da mesma forma que utilizamos o padrão RESTfull para fazer chamadas API onde temos métodos GET, POST, PUT, DELETE. O GraphQL assim como o padrão RESTfull é uma forma de comunicar o Frontend com o Backend.
+Ele básicamente serve para realizar operações de escrita e leitura através da comunicação do Front com o Back, da mesma forma que utilizamos o padrão RESTfull para fazer chamadas API onde temos métodos GET, POST, PUT, DELETE. O GraphQL assim como o padrão RESTfull é uma forma de comunicar o Frontend com o Backend.
 </LINKEDIN>
 
 O GraphQL é totalmente independente da tecnologia que é utilizada no backend ou do frontend, do banco de dados, ou seja, para o GraphQL não importa nada disso, ele não funciona especificamente em uma linguagem, em uma tecnologia. O GraphQL é um conjunto de padrões para comunicar o Frontend com o Backend de uma maneira diferente da maneira convencional quando é feito chamadas API utilizando o padrão RESTfull.
@@ -27,7 +27,7 @@ O GraphQL é totalmente independente da tecnologia que é utilizada no backend o
     - http://localhost:3000/users
       - DB (usuários)
     - http://localhost:3000/addresses
-    - Se em agum momento no Frontend que tem uma página que precisa tanto de usuários quanto de endereços desses usuários, se a rota de usuários não retornou todos os dados que eu precisava, isso foi um Underfetching, eu fiz uam chamada para o backend e não me devolveu todos os dados que eu precisava.
+    - Se em agum momento no Frontend tem uma página que precisa tanto de usuários quanto de endereços desses usuários, se a rota de usuários não retornou todos os dados que eu precisava, isso foi um Underfetching, eu fiz uma chamada para o backend e não me devolveu todos os dados que eu precisava.
 
 Quando fazemos uma chamada para o backend utilizando padrão REST, é feita uma chamada para a rota users por exemplo e essa rota determina quais dados vão ser retornados, ou seja, o backend tem toda a responsabilidade por dizer para o frontend exatamente quais são os dados que vão ser retornados.
 
